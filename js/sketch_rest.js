@@ -7,17 +7,18 @@ function setup() {
 
 function draw() {
   background(0);
-  translate(width / 2, height / 2);
+  translate(width/2, height/2)
 
   noFill();
   stroke(255, 204, 0);
-  strokeWeight(150);
+  strokeWeight(200);
 
 
-  for (let i = 0; i < 40; i++) {
-    stroke(random(-250, 50))
-    ellipse(0, 0, 150 * i + 50);
+  for (let i = 0; i < 20; i++) {
+    stroke(random(-0, 50))
+    ellipse(0, 0, 10 * i + 10);
   }
+
 }
 
 // Изменяем размер канваса, если изменился размер окна

@@ -1,6 +1,13 @@
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
+
+@font-face {
+  font-family: "AA Planet";
+  font-weight: regular;
+  src: url(AA_Planet_Kosmos.ttf) format('truetype');
+}
+
 * {
     box-sizing: border-box;
     user-select: none;
@@ -44,12 +51,12 @@ body.is-flexible {
 }
 
 h1 {
-    font-weight: 900;
+    font-family: "AA Planet";
     font-size: 88px;
     line-height: 1.1;
     letter-spacing: 5px;
     text-transform: uppercase;
-    -webkit-text-stroke: 1.5px black;
+    /* -webkit-text-stroke: 1.5px black; */
     -webkit-text-fill-color: white;
     padding-bottom: 40px;
     padding-top: 16px;
@@ -66,6 +73,7 @@ h1 {
 }
 
 h2 {
+  color: white;
     font-size: 30px;
     line-height: 1.2;
     padding-bottom: 48px;
@@ -136,7 +144,7 @@ li {
 
 .btn:hover {
     color: red;
-    border: 1px solid red; 
+    border: 1px solid red;
 }
 
 .info {
@@ -166,3 +174,69 @@ li {
     left: 0;
     z-index: -1;
 }
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 68px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .content h1{
+    font-size: 50px;
+  }
+
+  ul {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .content h1{
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3,
+  ul {
+    font-size: 14px;
+  }
+
+  p {
+    padding-bottom: 24px;
+    font-size: 14px;
+  }
+
+
+  .is-right,
+  .is-bottom {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
